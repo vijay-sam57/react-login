@@ -10,5 +10,6 @@ html,body,#root{
 }
 
 #root{
-  background-image: url('./../public/static/images/background.jpg');
+  /* background-image: url('./../public/static/images/background.jpg'); */
+  background-color: rgba(92, 104, 175,0.3);
 }
