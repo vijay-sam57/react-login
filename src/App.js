@@ -1,11 +1,13 @@
 import "./App.css";
 import LoginForm from "./LoginForm";
-
+import clgbg from "./clgbg.jpg";
 function App() {
   return (
     <div className="App">
-      <div className="login">
-        <h1>Login</h1>
+      <div className="clg">
+        <img src={clgbg} alt="A purple background"></img>
+      </div>
+      <div className="loginform">
         <LoginForm></LoginForm>
       </div>
     </div>

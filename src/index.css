@@ -2,14 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Work Sans', sans-serif;
 }
 
 html,body,#root{
   height: 100%;
-}
-
-#root{
-  /* background-image: url('./../public/static/images/background.jpg'); */
-  background-color: rgba(92, 104, 175,0.3);
 }

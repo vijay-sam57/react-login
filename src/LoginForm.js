@@ -13,27 +13,37 @@ function LoginForm() {
   };
   return (
     <div>
-      <form onSubmit={submitForm}>
-        <div className="image-div">
-          <img src={user} alt={"profile of a user"}></img>
-        </div>
-        <div className="input-div">
-          <label>Enter your username</label>
+      <h2>Login</h2>
+      <h3>Hello, Teachers!</h3>
+      <h4>Enter your personal details below.</h4>
+      <form>
+        <div>
+          <label for={"name"}>Username:</label>
           <input
-            type={"text"}
+            id="name"
+            type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-          />
+          ></input>
         </div>
-        <div className="input-div">
-          <label>Enter your password</label>
+        <div>
+          <label for={"id"}>Password:</label>
           <input
-            type={"password"}
+            id="password"
+            type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          />
+          ></input>
         </div>
-        <input className={"submit-btn"} type={"submit"} value={"submit"} />
+        <div>
+          <a href="#">Forget password / Username</a>
+        </div>
+        <div>
+          <input type="submit" value="submit"></input>
+        </div>
+        <div>
+          <a href="#">Not registered? Create Account</a>
+        </div>
       </form>
     </div>
   );
