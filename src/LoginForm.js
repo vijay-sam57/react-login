@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "./LoginForm.css";
+import user from "./user-profile.png";
 
 function LoginForm() {
   const [name, setName] = useState("");
@@ -12,8 +14,10 @@ function LoginForm() {
   return (
     <div>
       <form onSubmit={submitForm}>
-        <div>User image comes here.</div>
-        <div>
+        <div className="image-div">
+          <img src={user} alt={"profile of a user"}></img>
+        </div>
+        <div className="input-div">
           <label>Enter your username</label>
           <input
             type={"text"}
@@ -21,7 +25,7 @@ function LoginForm() {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div>
+        <div className="input-div">
           <label>Enter your password</label>
           <input
             type={"password"}
@@ -29,7 +33,7 @@ function LoginForm() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <input type={"submit"} value={"submit"} />
+        <input className={"submit-btn"} type={"submit"} value={"submit"} />
       </form>
     </div>
   );
