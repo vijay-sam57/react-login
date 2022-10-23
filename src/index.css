@@ -8,3 +8,11 @@
 html,body,#root{
   height: 100%;
 }
+
+:root{
+  --violet: rgb(104, 46, 135);
+  --gray: rgb(169,169,169);
+  --black: rgba(0,0,0,0.9);
+  --lightgray: rgba(137, 148, 153,0.2);
+  --white: rgb(255,255,255);
+}

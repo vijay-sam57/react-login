@@ -13,35 +13,37 @@ function LoginForm() {
   };
   return (
     <div>
-      <h2>Login</h2>
-      <h3>Hello, Teachers!</h3>
-      <h4>Enter your personal details below.</h4>
+      <h2 className="hero1">Login</h2>
+      <h3 className="hero2">Hello, Teachers!</h3>
+      <p className="hero3">Enter your personal details below.</p>
       <form>
-        <div>
-          <label for={"name"}>Username:</label>
-          <input
-            id="name"
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          ></input>
+        <div className="inputbox">
+          <div className="userinput">
+            <label for={"name"}>Username:</label>
+            <input
+              required
+              id="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            ></input>
+          </div>
+          <div className="userinput">
+            <label for={"id"}>Password:</label>
+            <input
+              required
+              id="password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            ></input>
+          </div>
+          <div className="forget">
+            <a href="#">Forget password / Username</a>
+          </div>
         </div>
-        <div>
-          <label for={"id"}>Password:</label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          ></input>
-        </div>
-        <div>
-          <a href="#">Forget password / Username</a>
-        </div>
-        <div>
-          <input type="submit" value="submit"></input>
-        </div>
-        <div>
+        <input type="submit" value="Submit" className="submit-btn"></input>
+        <div className="register">
           <a href="#">Not registered? Create Account</a>
         </div>
       </form>

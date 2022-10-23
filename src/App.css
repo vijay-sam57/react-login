@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 80%;
+  height: 90%;
   width: 100%;
 }
 
@@ -22,4 +22,5 @@
 img{
   width: 70%;
   height: 60%;
+  margin-left: 4rem;
 }
