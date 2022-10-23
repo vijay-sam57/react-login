@@ -1,6 +1,8 @@
 import "./App.css";
 import LoginForm from "./LoginForm";
 import clgbg from "./clgbg.jpg";
+import "./Responsive.css";
+
 function App() {
   return (
     <div className="App">
