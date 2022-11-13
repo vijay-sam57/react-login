@@ -1,3 +1,9 @@
+h1{
+    padding: 1rem 2rem;
+    background-color: var(--m-black);
+    color: var(--m-lace);
+}
+
 .attable{
     width: 90%;
     list-style-type: none;
